@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineStream - Tu plataforma de streaming</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <h1>CineStream</h1>
+          </div>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="#" class="nav-link active">Inicio</a></li>
+              <li><a href="#" class="nav-link">Búsqueda</a></li>
+              <li><a href="#" class="nav-link">Favoritos</a></li>
+            </ul>
+          </nav>
+          <div class="nav-actions">
+            <button class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+            <div class="profile">
+              <img src="https://via.placeholder.com/40" alt="Perfil" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Cargando...</h1>
+          <p class="hero-description">Cargando descripción...</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">
+              <i class="fas fa-play"></i> Reproducir
+            </button>
+            <button class="btn btn-secondary">
+              <i class="fas fa-info-circle"></i> Más información
+            </button>
+          </div>
+        </div>
+        <div class="hero-overlay"></div>
+      </section>
+
+      <main class="main-content">
+        <!-- PELICULAS POPULARES -->
+        <section class="content-section">
+          <h2 class="section-title">Películas Populares</h2>
+          <div class="movies-grid" id="popular-movies"></div>
+        </section>
+
+        <!-- SERIES POPULARES -->
+        <section class="content-section">
+          <h2 class="section-title">Series Populares</h2>
+          <div class="movies-grid" id="popular-series"></div>
+        </section>
+
+        <!-- PROXIMOS ESTRENOS -->
+        <section class="content-section">
+          <h2 class="section-title">Próximos Estrenos</h2>
+          <div class="movies-grid" id="upcoming-movies"></div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="logo">
+            <h2>CineStream</h2>
+          </div>
+          <div class="footer-links">
+            <div class="link-column">
+              <h3>Navegación</h3>
+              <a href="#">Inicio</a>
+              <a href="#">Películas</a>
+              <a href="#">Series</a>
+              <a href="#">Mi Lista</a>
+            </div>
+            <div class="link-column">
+              <h3>Información</h3>
+              <a href="#">Acerca de</a>
+              <a href="#">Contacto</a>
+              <a href="#">Términos de uso</a>
+              <a href="#">Política de privacidad</a>
+            </div>
+            <div class="link-column">
+              <h3>Redes Sociales</h3>
+              <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 CineStream. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
