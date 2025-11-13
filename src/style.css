@@ -95,13 +95,18 @@ body {
   color: var(--primary-color);
 }
 
-.profile img {
+.profile {
   width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  object-fit: cover;
+  height: auto;
+  border-radius: 50%;
 }
 
+.img-profile {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
 /* Hero Section */
 .hero {
   position: relative;
@@ -190,6 +195,7 @@ body {
   padding: 2rem;
   max-width: 1400px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .content-section {
@@ -505,13 +511,6 @@ body {
   padding: 3rem;
   color: var(--text-secondary);
   font-size: 1.1rem;
-}
-
-.main-content {
-  padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  width: 100%;
 }
 
 .no-results,
