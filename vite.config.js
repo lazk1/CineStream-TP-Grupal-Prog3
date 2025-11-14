@@ -1,7 +1,18 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [react()],
-  base: "/CineStream-TP-Grupal-Prog3/",
-});
+  base: './',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: {
+        main: './index.html'
+        // Agrega otras páginas HTML si tienes
+      }
+    }
+  },
+  server: {
+    port: 3000
+  }
+})
